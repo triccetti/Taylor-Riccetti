@@ -12,6 +12,7 @@ body, html {
 }
 
 .navbar {
+	z-index: 10000;
     margin-bottom: 0;
 }
 
@@ -54,10 +55,8 @@ body, html {
     /*outline: 2px solid #ccc; */
  }
  
- .about-text {
-
+ .about-text, .titles-text {
     text-shadow: 2px 2px 1px black;
-	text-align: right;
 	color:white;
  }
  
@@ -78,3 +77,8 @@ body, html {
     top: 15%;
     transform: translateY(-15%);
 }
+
+.titles-text {
+	float: left;
+}
+
