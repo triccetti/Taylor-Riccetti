@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html,
 body {
   margin: none;
@@ -10,13 +11,13 @@ body {
 .fab {
   text-shadow: 1px 1px 2px #302c2e;
 }
-
+ 
 .mono {
   font-family: "Cutive Mono", monospace;
 }
 
 .ubuntu {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif; 
 }
 
 .archivo {
@@ -47,7 +48,7 @@ body {
 .icon-link {
   color: #827094;
 }
-
+ 
 .icon-link:hover {
   color: #564064;
 }
@@ -239,3 +240,4 @@ footer a {
 
 /* x-large screen */
 @media (min-width: 1200px) { }
+ 
