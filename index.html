@@ -8,8 +8,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Font awesome and google fonts -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Cutive+Mono|Ubuntu" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet"/> 
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet"/> 
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/> 
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
@@ -19,7 +21,7 @@
 				
 		<!-- My code! -->		
 		<script src="scripts.js"></script>
-		<link href="style.css" rel="stylesheet"> 
+		<link href="style.css" rel="stylesheet"/> 
 	</head>
 
 	<body>		
@@ -28,7 +30,7 @@
 			<div class="page-padding nav-container" id="navbar"> 
 				<!-- https://work.smarchal.com/twbscolor/4.0.0/css/3978a8394778dff6f58aebf11 -->
 				<nav class="navbar navbar-expand-sm navbar-custom">
-					<a class="navbar-brand" href="#home">Taylor Riccetti</a>
+					<a class="navbar-brand" href="#">Taylor Riccetti</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
 					    <i class="fa fa-bars fa-lg py-1 light-white"></i>
 					</button>
@@ -36,262 +38,287 @@
 					<div class="collapse navbar-collapse" id="navbarCustom">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active">
-								<a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+								<a class="nav-link slow-transition" href="#about">About<span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Expierence</a>
+								<a class="nav-link slow-transition" href="#expierence">Expierence</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+								<a class="nav-link dropdown-toggle slow-transition" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item slow-transition" href="#">Action</a>
+									<a class="dropdown-item slow-transition" href="#">Another action</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item slow-transition" href="#">Something else here</a>
 								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Skills</a>
+								<a class="nav-link slow-transition" href="#skills">Contact</a>
 							</li>  
-						</ul>  
-						<span class="ml-auto navbar-text contact-me">Contact</span>
+						</ul>   
+						<button class="ml-auto slow-transition">Resume</button>
 					</div>
 				</nav>
 			</div>
 			
 			<!-- Container -->
 			<div class="container-fluid" id="contents">
-				<!-- About --> 
-				<div class="page-padding" id="home">
+				<!-- Home --> 
+				<br class="section-spacing"/>
+				<div class="page-padding">
 					<div id="circle-pic" class="shadow"></div>
-					<div id="about">
+					<div id="home">
 						<h4 class="ubuntu">Hi, I'm</h4>
-						<h1 class="archivo dark-blue">Taylor Riccetti</h2>
+						<h1 class="archivo dark-blue">Taylor Riccetti</h1>
 						<h3 class="ubuntu">Software Engineer</h3>
 						
 						<hr/>
 						 
-						<p id="about-blurb">Im a software engineering based in Seattle, WA currently working at <a href="http://www.boeing.com/">Boeing</a> as a Systems Engineer.</p>
+						<p id="about-blurb">I'm a software engineering based in Seattle, WA currently working at <a class="slow-transition" href="http://www.boeing.com/">Boeing</a> as a Systems Engineer.</p>
+						<button class="slow-transition purple">Message Me</button>
+					</div>
+				</div> 
+				<br class="section-spacing"/>
+
+				<!-- About --> 
+				<div class="page-padding">				
+					<div id="about">
+						<h2 class="archivo dark-blue">About Me</h2>
+						<hr/>
+						<p>Hello! I'm <span class="bold purple">Taylor Riccetti</span>, a software engineer in the Greater Seattle Area. I enjoy developing applications, games, mobile applications and websites that provide an eligant user interface and functionality. Some of the technologies I have expierence in are:</p>
+						<ul class="p-languages mono">
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								Java
+							</li>
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								C/C++
+							</li>
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								HTML/CSS
+							</li>
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								JavaScript
+							</li>
+						</ul>
+						<ul class="p-languages mono">
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								Python
+							</li>
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								PHP
+							</li>
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								SQL
+							</li>
+ 							<li>
+								<i class="fas fa-dot-circle"></i>
+								C#
+							</li>
+						</ul>
+
+						<p>I graduated from <span class="bold purple">Unviersity of Washington, Tacoma</span> in 2018 where I recieved my Bachelors of Science in <span class="bold purple">Computer Science and Systems</span>. During my studies I took a broad range of courses including:</p>
+						<ul class="courses mono">
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								Game Development
+							</li>
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								Artificial Intelligence
+							</li>
+						</ul>
+						<ul class="courses mono">
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								Human Computer Interfaces
+							</li>
+							<li>
+								<i class="fas fa-dot-circle"></i>
+								Natural Language Processing
+							</li>
+						</ul>
+						 
+						<p>When I am not working I spend my time leveling up my programming skills by designing a solo game project, or just actually leveling up, playing with my two cats or enjoying time with friends and family.</p>
 					</div>
 				</div>
-<<<<<<< HEAD
-				 
+				<br class="section-spacing"/>
+
 				<!-- Expierence --> 
 				<div class="page-padding"> 
 					<div id="expierence">
-						<h2 class="purple">Expierence</h2>
-
+						<h2 class="archivo dark-brown">Expierence</h2>
+						<hr/>
+						<div id="jobs">
+							<div id="job-list-container">
+								<h4 class="ubuntu gray">Where I've worked</h4>
+								<ul id="job-list" class="mono">
+									<li class="slow-transition" onclick="jobSelect(0)">
+										<span class="fas fa-plane icon-job-list shadow"></span>Boeing
+									</li>
+									<li class="slow-transition" onclick="jobSelect(1)">
+										<span class="fas fa-shipping-fast icon-job-list shadow"></span>Expeditors
+									</li>
+									<li class="slow-transition" onclick="jobSelect(2)">
+										<span class="fas fa-cogs icon-job-list shadow"></span>CettiWorks
+									</li> 
+								</ul>
+							</div>
+							<div id="job-container">
+								<div id="job0" class="job-pane"> 
+									<p class="title">Systems Engineer at <a class="slow-transition" href="http://www.boeing.com/">Boeing</a></p>
+									<p class="date">August 2018 - Present</p>
+									<ul class="job-tasks">
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Develop security features for new concepts and technology that apply to commercial aviation products, including machine learning, deep learning and artificial intelligence.</p>
+										</li>
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Applying frameworks such as <span class="mono">Flask</span> and <span class="mono">Socket.io</span> to develop asychronous capabilties for <span class="mono">Javascript</span> web applications.</p>
+										</li>
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Integrate software using different laguages and technologies such as <span class="mono">ROS</span>, <span class="mono">Redis</span>, <span class="mono">Python</span> and <span class="mono">C/C++</span>.</p>
+										</li>
+									</ul>
+								</div>
+								<div id="job1" class="job-pane">
+									<p class="title">Java EDI Developer Intern at <a class="slow-transition" href="https://www.expeditors.com">Expeditors</a></p>
+									<p class="date">June 2017 - September 2017</p>
+									<ul class="job-tasks">
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Enhanced and maintained internal applications using <span class="mono">Java</span> and <span class="mono">Java Swing</span> toolkit.</p>
+										</li>
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Followed best practices for release deployment to maintain code quality with <span class="mono">CVS</span> version control and code reviews.</p>
+										</li>
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Collaborated with small teams to design interfaces for better usability by applying an <span class="mono">Agile Development</span> approach and collecting user requirements.</p>
+										</li>
+									</ul>
+								</div>
+								<div id="job2" class="job-pane">
+									<p class="title">Junior Software Developer at <a class="slow-transition"  href="http://www.cettiworks.com/">CettiWorks</a></p>
+									<p class="date">December 2015 - June 2017</p>
+									<ul class="job-tasks">
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Wrote test scripts in <span class="mono">Selenium</span> and <span class="mono">C#</span> inorder to maintain web applications. As well as automated user input for validation testing using <span class="mono">Selenium</span>.</p>
+										</li>
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness.</p>
+										</li> 
+										<li>
+											<i class="fas fa-dot-circle"></i>
+											<p>Developed <span class="mono">Selenium</span> scripts to automate <span class="mono">JSON</span> specifications, used to create a scalable system for <span class="mono">HTML</span> forms for CettiWorks' clients.</p>
+										</li> 
+									</ul> 
+								</div> 
+							</div>
+						</div> 
 					</div>
 				</div>
+				<br class="section-spacing"/>
+
+				<!-- Projects -->
+				<div class="page-padding">
+					<div id="projects">
+						<h2 class="archivo dark-blue">Projects</h2>
+						<hr/>
+						<ol class="title">
+							<li>
+								<h2 class="title dark-brown">Stranded on Planet Pixel</h2>
+								<hr/>
+								<div>
+									<img class="project-img" src="strandedonplanetpixel.png"/>
+								</div>
+							</li>
+
+							<br class="small-spacing"/>
+							<li>
+								<p class="title dark-brown">The Husky Review</p>
+								<hr/>
+								<div>
+									<img class="project-img" src="huskyreview.png"/>
+								</div>
+							</li>
+							<br class="small-spacing"/>
+							<li>
+								<p class="title green">Amazon Fake Review / Bot Detection</p>
+								<hr/>
+								<div>
+									<img class="project-img" src="botdetector.png"/>
+								</div>
+							</li>
+							<br class="small-spacing"/>
+							<li>
+								<p class="title dark-brown">Pentago</p>
+								<hr/>
+								<div>
+									<img class="project-img" src="pentago.png"/>
+								</div>
+							</li> 
+							<br class="small-spacing"/>
+							<li>
+								<p class="title dark-brown">MapMaker</p>
+								<hr/>
+								<div>
+									<img class="project-img" src="mapmaker.png"/>
+								</div>
+							</li>
+						</ol> 
+					</div>
+				</div>
+				<br class="section-spacing"/>
 			</div>
 
 			<div id="left-margin">
-
 				<ul id="link-icons">
 					<li>
-						<a href="https://www.linkedin.com/in/taylorriccetti/"><span class="icon-link fab fa-linkedin"></span></a>
+						<a href="https://www.linkedin.com/in/taylorriccetti/"><span class="icon-link fab fa-linkedin slow-transition"></span></a>
 					</li>
 					<li>
-						<a href="https://github.com/triccetti"><span class="icon-link fab fa-github"></span></a>
+						<a href="https://github.com/triccetti"><span class="icon-link fab fa-github slow-transition"></span></a>
 					</li>
 					<li>
-						<a href="https://www.facebook.com/taylristic"><span class="icon-link fab fa-facebook"></span></a>
+						<a href="https://www.facebook.com/taylristic"><span class="icon-link fab fa-facebook slow-transition"></span></a>
 					</li>
 					<li>
-						<a href="https://codepen.io/taylorriccetti"><span class="icon-link fab fa-codepen"></span></a>
+						<a href="https://codepen.io/taylorriccetti"><span class="icon-link fab fa-codepen slow-transition"></span></a>
 					</li>
 				</ul>
-=======
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#about">About</a></li>
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#project1">Project 1</a></li>
-								<li><a href="#project2">Project 2</a></li>
-								<li><a href="#project3">Project 3</a></li>
-							</ul>
-						</li>
-						<li><a href="#skills">Skills</a></li> 
-						<li><a href="#">Resume</a></li> 
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> E-Mail</a></li>
-						<li id="phone-modal"><a href="#"><span class="glyphicon glyphicon-phone"></span> Phone</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	
-		<div class="container text-center"   id="about">
-			<div class="row behind">
-				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 bg"></div>
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><p> </p></div>
-			</div>	
-		 
-			<div class="row center-right">
-				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 about-text">
-					<h1><small class="about-text">Hi, I am </small></h1>
-					<h1>Taylor Riccetti</h1>
-					</br></br>
-					<p>Software Engineer</p>
-					<p>Systems Engineer</p>
-					<p>Game Enthusiast</p>
-					<p>Pixel Artist</p>
-				</div>
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-					<a href="https://www.linkedin.com/in/taylorriccetti/"><span class="icon-link fab fa-linkedin"></span></a>
-					<a href="https://github.com/triccetti"><span class="icon-link fab fa-github"></span></a>
-					<a href="https://www.facebook.com/taylristic"><span class="icon-link fab fa-facebook"></span></a>
-					<a href="https://codepen.io/taylorriccetti"><span class="icon-link fab fa-codepen"></span></a>
-				</div> 
-			</div> 
-		</div>
-		
-		<div class="container text-center" id="projects">
-			<h2>Projects</h2>
-			<div class="row project" id="project1">	
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-					<h3>The Husky Review</h3>
-					<h4>An app to search and review courses</h4>
-					</br>
-					<p><strong>Technology Used:</strong></p>
-					<p>Android Studios</p>
-					<p>University of Washington Course API</p>
-					<p>mySQL</p>
-					<p>PHP Webserver</p>
-				</div>
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-					<img  class="project-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTTevca2qmVKv2k97IrV8ktQUy6ACHKbPp273mQVFFYcyCzaz" alt="phone-apps"/>
-				</div>
-			</div>
-			<div class="row project" id="project2">
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-					<img  class="project-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTetglc9VFn0nM2Ui4ZNur9rOThcXnJLSjwubTNHTJroDZysCls" alt="phone-apps"/>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-					<h3>Pentago</h3>
-					<h4>A program to play the game of Pentago</h4>
-					</br>
 
-					<p><strong>Technology Used:</strong></p>
-					<p>AI algorithms</p>
-					<p>JavaFX</p>
-				</div>
-			</div>
-			<div class="row project" id="project3">
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-					<h3>Stranded on Planet Pixel</h3>
-					<h4>A 2D top-down survial game</h4>
-					<h4>Play it <a class="game-link" href="https://strandedonplanetpixel.github.io/">here</a></h4>
-					</br>					
-					<p><strong>Technology Used:</strong></p>
-					<p>Javascript</p>
-					<p>HTML5/CSS</p>
-					<p>Aesprite</p>
-				</div> 
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-					<img class="project-img" src="capture.PNG" alt="stranded on planet pixel"/>
-				</div>
-			</div>
-		</div>
-		
-		<div class="container text-center" id="skills">
-			<h2>Skills</h2>
-			<h3>Programming languages</h3>
-			<div class="row">
-				<div class="col-xs-6 col-sm-6 col-md-4">
-					<h3><small>Java</small></h3>
-					<div class="progress">
-						<div class="progress-bar-success progress-bar-text" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  90%
-						</div>
-					 </div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4">
-					<h3><small>HTML5/CSS</small></h3>
-					<div class="progress">
-						<div class="progress-bar-success progress-bar-text" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  90%
-						</div>
-					 </div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4">
-					<h3><small>SQL</small></h3>
-					<div class="progress">
-						<div class="progress-bar-success progress-bar-text" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  80%
-						</div>
-					 </div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4">
-					<h3><small>Python</small></h3>
-					<div class="progress">
-						<div class="progress-bar-success progress-bar-text" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  75%
-						</div>
-					 </div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4">
-					<h3><small>JavaScript</small></h3>
-					<div class="progress">
-						<div class="progress-bar-success progress-bar-text" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  75%
-						</div>
-					 </div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4">
-					<h3><small>PHP</small></h3>
-					<div class="progress">
-						<div class="progress-bar-info progress-bar-text" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  70%
-						</div>
-					 </div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4">
-					<h3><small>C/C++</small></h3>
-					<div class="progress">
-						<div class="progress-bar-info progress-bar-text" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-						  65%
-						</div>
-					 </div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-4">
-					<h3><small>C#</small></h3>
-					<div class="progress">
-						<div class="progress-bar-warning progress-bar-text" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-						  50%
-						</div>
-					 </div>
-				</div>					
->>>>>>> a9bc6f1e8e5e2b6b7f7940bf8b92203abbc6dc36
 			</div>
 
 			<footer>
 				<ul id="footer-links">
 					<li>
-						<a href="https://www.linkedin.com/in/taylorriccetti/"><span class="fab fa-linkedin icon-footer"></span></a>
+						<a href="https://www.linkedin.com/in/taylorriccetti/"><span class="fab fa-linkedin icon-footer slow-transition"></span></a>
 					</li>
 					<li>
-						<a href="https://github.com/triccetti"><span class="fab fa-github icon-footer"></span></a>
+						<a href="https://github.com/triccetti"><span class="fab fa-github icon-footer slow-transition"></span></a>
 					</li>
 					<li>
-						<a href="https://www.facebook.com/taylristic"><span class="fab fa-facebook icon-footer"></span></a>
+						<a href="https://www.facebook.com/taylristic"><span class="fab fa-facebook icon-footer slow-transition"></span></a>
 					</li>
 					<li>
-						<a href="https://codepen.io/taylorriccetti"><span class="fab fa-codepen icon-footer"></span></a>
+						<a href="https://codepen.io/taylorriccetti"><span class="fab fa-codepen icon-footer slow-transition"></span></a>
 					</li>
 				</ul>
-				<a class="mono" href="https://github.com/triccetti/Portfolio">Made by Taylor Riccetti</a>
+				<a class="mono slow-transition" href="https://github.com/triccetti/Portfolio">Made by Taylor Riccetti</a>
 			</footer>
 		</div>
-		
-		<div class="container" id="resume">
-			<h2>Resume</h2>
-			
-			<h3>Work Experience</h3>
-			
-		</div>
+		 
 	</body>
 </html>

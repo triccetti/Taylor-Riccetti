@@ -9,5 +9,16 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-window.onload = function() { 
+window.onload = function() {  
+	// Display job0 when page loads.
+	jobSelect(0);
 };
+
+function jobSelect(val) {
+	var jobs = document.getElementsByClassName("job-pane");   
+	for(var i = 0; i < jobs.length; i++) {
+		jobs[i].style.display = 'none';
+	}
+	var showJob = document.getElementById("job" + val);
+	showJob.style.display = '';
+}
