@@ -1,3 +1,10 @@
+* {
+  transition: all 0.25s;
+  transition-property: all;
+  transition-duration: 0.25s; 
+  transition-delay: 0s;
+}
+
 html,
 body {
   margin: none;
@@ -13,7 +20,7 @@ body {
 }
  
 .mono {
-  font-family: "Cutive Mono", monospace;
+  font-family: "Cutive Mono", monospace;  
 }
 
 .ubuntu {
@@ -107,6 +114,49 @@ hr {
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
+}
+
+#stranded-pic {
+  background-image: url("strandedonplanetpixel.png");
+}
+#husky-pic{  
+  background-image: url("huskyreview.png");
+}
+#mapmaker-pic{  
+  background-image: url("mapmaker.png");
+}
+#bot-pic{  
+  background-image: url("botdetector.png");
+}
+#pentago-pic{  
+  background-image: url("pentago.png");
+}
+
+#stranded-pic,
+#husky-pic, 
+#mapmaker-pic,
+#bot-pic, 
+#pentago-pic {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+#stranded-pic:hover, 
+#husky-pic:hover,
+#mapmaker-pic:hover,
+#bot-pic:hover, 
+#pentago-pic:hover{
+  -webkit-filter: grayscale(0);
+  filter: none;
 }
 
 .page-padding {
@@ -336,35 +386,24 @@ button:hover {
   background-color: rgba(57, 71, 120, 0.5);
   cursor: pointer;
 } 
-
-.project-img {
-  height: 300px;
-  filter: gray;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  border: 4px solid #3978a8;
-  z-index: 8;
-}
-
-.project-img:hover {  
-  border: 4px solid #3978a8;
-  -webkit-filter: grayscale(0);
-  filter: none;
-}
-
-.project-description {
-  color: #a0938e;
-  width: 300px;
-  float: right;
-  position: relative;
-  left: -15px;
-  z-index: 9; 
-  background: #394778;
-  padding: 15px;
-}
-
+ 
 .project-title {
+  color: #3c5956;
   display: inline-block;
+}
+
+.project > * {
+  color: #dff6f5;
+}
+
+.project {
+  padding: 5px 25px;
+  box-shadow: rgba(2, 12, 27, 0.9) 0px 2px 4px;
+  background-color: #a0938e;
+}
+
+.project a {
+  color: #397b44;
 }
 
 a {
