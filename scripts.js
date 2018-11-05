@@ -13,8 +13,9 @@ window.onload = function() {
 	// Display job0 when page loads.
 	jobSelect(0); 
 
+	// Adds click listener to all navbar links.
 	var allLinks = document.getElementsByTagName('a');
-    for (var i=0; i < allLinks.length; i++) { 
+    	for (var i=0; i < allLinks.length; i++) { 
 		var lnk = allLinks[i]; 
 		if ((lnk.href && lnk.href.indexOf('#') != -1) &&  
 			( (lnk.pathname == location.pathname) || 
@@ -37,13 +38,12 @@ function jobSelect(val) {
 	var showJob = document.getElementById("job" + val);
 	showJob.style.display = '';
 }
- 
+
 function scrollTo(element) {
-  var offset = element.offsetTop - 200;
-  console.log(offset);
-  window.scroll({
-    behavior: 'smooth',
-    left: 0,
-    top: offset
-  });
+	var offset = element.offsetTop - 200; 
+	window.scroll({
+		behavior: 'smooth',
+		left: 0,
+		top: offset
+	});
 }
