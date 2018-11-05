@@ -404,7 +404,7 @@ footer a {
   width: 100%;
 }
 
-button { 
+.button { 
   color: #dff6f5;
   background-color: transparent;
   border: 2px solid #3978a8;
@@ -412,10 +412,11 @@ button {
   padding: 5px;
 }
 
-button:hover { 
+.button:hover { 
   color: rgba(223, 246, 245, 0.5);
   background-color: rgba(57, 71, 120, 0.5);
   cursor: pointer;
+  text-decoration: none;
 } 
  
 .project-title {
@@ -606,7 +607,7 @@ a {
   p, .job-task li p {
     font-size: 18px;
   }   
-  
+
   .project-pic > .icon-link {
     font-size: 50px;
   }
