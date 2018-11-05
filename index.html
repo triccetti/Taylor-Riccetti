@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Font awesome and google fonts -->
+		<!-- Font awesome and Google fonts -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
 		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet"/> 
 		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet"/> 
@@ -22,15 +22,25 @@
 		<!-- My code! -->		
 		<script src="scripts.js"></script>
 		<link href="style.css" rel="stylesheet"/> 
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96715828-3"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date()); 
+			gtag('config', 'UA-96715828-3');
+		</script>
+
 	</head>
 
 	<body>		
-		<div>
+		 
 			<!-- Navbar -->
 			<div class="page-padding nav-container" id="navbar"> 
 				<!-- https://work.smarchal.com/twbscolor/4.0.0/css/3978a8394778dff6f58aebf11 -->
 				<nav class="navbar navbar-expand-sm navbar-custom">
-					<a class="navbar-brand" href="#">Taylor Riccetti</a>
+					<a class="navbar-brand" data-toggle="collapse" data-target="#navbarCustom" href="#home">Taylor Riccetti</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCustom">
 					    <i class="fa fa-bars fa-lg py-1 light-white"></i>
 					</button>
@@ -38,24 +48,24 @@
 					<div class="collapse navbar-collapse" id="navbarCustom">
 						<ul class="navbar-nav mr-auto">
 							<li class="nav-item active">
-								<a class="nav-link slow-transition" href="#about">About<span class="sr-only">(current)</span></a>
+								<a class="nav-link slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#about">About<span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link slow-transition" href="#expierence">Expierence</a>
+								<a class="nav-link slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#experience">Experience</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle slow-transition" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+								<a class="nav-link dropdown-toggle slow-transition" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a class="dropdown-item slow-transition" href="#project1">Stranded On Planet Pixel</a>
-									<a class="dropdown-item slow-transition" href="#project2">The Husky Review</a>
-									<a class="dropdown-item slow-transition" href="#project3">Bot Detector</a>
-									<a class="dropdown-item slow-transition" href="#project4">Pentago</a>
-									<a class="dropdown-item slow-transition" href="#project5">Map Maker</a>
+									<a class="dropdown-item slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#project1">Stranded On Planet Pixel</a>
+									<a class="dropdown-item slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#project2">The Husky Review</a>
+									<a class="dropdown-item slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#project3">Bot Detector</a>
+									<a class="dropdown-item slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#project4">Pentago</a>
+									<a class="dropdown-item slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#project5">Map Maker</a>
 								</div>
 							</li>
-							<!--<li class="nav-item">
-								<a class="nav-link slow-transition" href="#skills">Contact</a>
-							</li> --> 
+							<li class="nav-item">
+								<a class="nav-link slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#contact" contact>Contact</a>
+							</li>
 						</ul>   
 						<a href="https://drive.google.com/file/d/1W_HwxAaPlO9HcbzQLeIEVmg4eksOE5qY/view?usp=sharing"><button class="ml-auto slow-transition">Resume</button></a>
 					</div>
@@ -66,16 +76,16 @@
 			<div class="container-fluid" id="contents">
 				<!-- Home --> 
 				<br class="section-spacing"/>
-				<div class="page-padding">
+				<div id="home" class="page-padding">
 					<div id="circle-pic" class="shadow"></div>
-					<div id="home">
+					<div>
 						<h4 class="ubuntu">Hi, I'm</h4>
 						<h1 class="archivo dark-blue">Taylor Riccetti</h1>
 						<h3 class="ubuntu">Software Engineer</h3>
 						
 						<hr/>
 						 
-						<p id="about-blurb">I'm a software engineering based in Seattle, WA currently working at <a class="slow-transition" href="http://www.boeing.com/">Boeing</a> as a Systems Engineer.</p>
+						<p id="about-blurb">I'm a software engineering based in Seattle, WA currently working at <a class="slow-transition bold purple" href="http://www.boeing.com/">Boeing</a> as a Cybersecurity Engineer.</p>
 					</div>
 				</div> 
 				<br class="section-spacing"/>
@@ -85,7 +95,7 @@
 					<div id="about">
 						<h2 class="archivo dark-blue">About Me</h2>
 						<hr/>
-						<p>Hello! I'm <span class="bold purple">Taylor Riccetti</span>, a software engineer in the Greater Seattle Area. I enjoy developing applications, games, mobile applications and websites that provide an eligant user interface and functionality. Some of the technologies I have expierence in are:</p>
+						<p>Hello! I'm a software engineer in the Greater Seattle Area. I enjoy developing applications, games, mobile applications and websites that provide an elegant user interface and effortless functionality. Some of the technologies I have experience in are:</p>
 						<ul class="p-languages mono">
 							<li>
 								<i class="fas fa-dot-circle"></i>
@@ -123,7 +133,7 @@
 							</li>
 						</ul>
 
-						<p>I graduated from <span class="bold purple">Unviersity of Washington, Tacoma</span> in 2018 where I recieved my Bachelors of Science in <span class="bold purple">Computer Science and Systems</span>. During my studies I took a broad range of courses including:</p>
+						<p>I graduated from <a class="slow-transition bold purple" href="http://www.tacoma.uw.edu/">University of Washington, Tacoma</a> in 2018 where I received my Bachelors of Science in Computer Science and Systems. During my studies I took a broad range of courses including:</p>
 						<ul class="courses mono">
 							<li>
 								<i class="fas fa-dot-circle"></i>
@@ -145,15 +155,15 @@
 							</li>
 						</ul>
 						 
-						<p>When I am not working I spend my time leveling up my programming skills by designing a solo game project, or just actually leveling up, playing with my two cats or enjoying time with friends and family.</p>
+						<p>When I am not working I spend my time leveling up my programming skills by designing a solo game project, playing with my two cats or enjoying time with friends and family.</p>
 					</div>
 				</div>
 				<br class="section-spacing"/>
 
-				<!-- Expierence --> 
+				<!-- Experience --> 
 				<div class="page-padding"> 
-					<div id="expierence">
-						<h2 class="archivo dark-brown">Expierence</h2>
+					<div id="experience">
+						<h2 class="archivo dark-brown">Experience</h2>
 						<hr/>
 						<div id="jobs">
 							<div id="job-list-container">
@@ -181,11 +191,11 @@
 										</li>
 										<li>
 											<i class="fas fa-dot-circle"></i>
-											<p>Applying frameworks such as <span class="mono">Flask</span> and <span class="mono">Socket.io</span> to develop asychronous capabilties for <span class="mono">Javascript</span> web applications.</p>
+											<p>Applying frameworks such as <span class="mono">Flask</span> and <span class="mono">Socket.io</span> to develop asynchronous capabilities for <span class="mono">JavaScript</span> web applications.</p>
 										</li>
 										<li>
 											<i class="fas fa-dot-circle"></i>
-											<p>Integrate software using different laguages and technologies such as <span class="mono">ROS</span>, <span class="mono">Redis</span>, <span class="mono">Python</span> and <span class="mono">C/C++</span>.</p>
+											<p>Integrate software using different languages and technologies such as <span class="mono">ROS</span>, <span class="mono">Redis</span>, <span class="mono">Python</span> and <span class="mono">C/C++</span>.</p>
 										</li>
 									</ul>
 								</div>
@@ -213,7 +223,7 @@
 									<ul class="job-tasks">
 										<li>
 											<i class="fas fa-dot-circle"></i>
-											<p>Wrote test scripts in <span class="mono">Selenium</span> and <span class="mono">C#</span> inorder to maintain web applications. As well as automated user input for validation testing using <span class="mono">Selenium</span>.</p>
+											<p>Wrote test scripts in <span class="mono">Selenium</span> and <span class="mono">C#</span> in order to maintain web applications. As well as automated user input for validation testing using <span class="mono">Selenium</span>.</p>
 										</li>
 										<li>
 											<i class="fas fa-dot-circle"></i>
@@ -299,7 +309,7 @@
 									<a href="https://github.com/triccetti/MapMaker">
 										<div id="mapmaker-pic" class="shadow slow-transition"></div>
 									</a>
-									<p>A simple program to create maps for a game using a tileset.</p>
+									<p>A simple program to create maps for a game using a tile set.</p>
 								</div>
 							</li>
 						</ol> 
@@ -343,7 +353,6 @@
 				</ul>
 				<a class="mono slow-transition" href="https://github.com/triccetti/Portfolio">Made by Taylor Riccetti</a>
 			</footer>
-		</div>
-		 
+		
 	</body>
 </html>

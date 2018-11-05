@@ -1,13 +1,6 @@
-* {
-  transition: all 0.25s;
-  transition-property: all;
-  transition-duration: 0.25s; 
-  transition-delay: 0s;
-}
-
 html,
 body {
-  margin: none;
+  margin: 0;
   padding: 0;
   color: #397b44;
   background-color: rgba(223, 246, 245, 0.3);
@@ -108,7 +101,7 @@ hr {
 #circle-pic {
   width: 200px;
   height: 200px;
-  background-image: url("https://raw.githubusercontent.com/triccetti/Portfolio/master/20181027_135912(1).jpg");
+  background-image: url("https://raw.githubusercontent.com/triccetti/Portfolio/master/20181027_140043.jpg");
   background-size: cover;
   display: inline-block;
   border-radius: 100px;
@@ -205,7 +198,7 @@ hr {
   color: #dff6f5;
 }
  
-#expierence {   
+#experience {   
   text-align: left;
   margin: 0 auto; 
 }
@@ -308,6 +301,7 @@ hr {
 }
 
 #contents { 
+  width: 100%;  
   margin-top: 80px; 
   display: inline-block;
 }
@@ -410,10 +404,10 @@ a {
   transition: all 0.25s;
   transition-property: all;
   transition-duration: 0.25s; 
-  transition-delay: 0s;  
+  transition-delay: 0s;   
 }
 
-.slow-transition {
+.slow-transition, * {
   transition: all 0.25s;
   transition-property: all;
   transition-duration: 0.25s; 
@@ -432,13 +426,14 @@ a {
 
 
 #about,
-#expierence,
+#experience,
 #projects {
   width: 700px;
 }
-
+ 
 /* x-small screen */
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {  
+
   #left-margin {
     display: none;
   }
@@ -492,10 +487,18 @@ a {
     font-size: 14px;
   }
 
-  #about, #expierence, #projects {
+  #about, #experience, #projects {
     width: 400px;
-  } 
+  }  
 
+  #stranded-pic,
+  #husky-pic, 
+  #mapmaker-pic,
+  #bot-pic, 
+  #pentago-pic {
+    width: 100px;
+    height: 100px; 
+  }
 }
 
 
@@ -513,12 +516,22 @@ a {
     margin: 50px;
   } 
 
-  #about, #expierence, #projects{
+  #about, #experience, #projects{
     width: 500px;
   }
 
   #jobs {
     display: inline-block;
+  }
+
+
+  #stranded-pic,
+  #husky-pic, 
+  #mapmaker-pic,
+  #bot-pic, 
+  #pentago-pic {
+    width: 150px;
+    height: 150px; 
   }
 }
 
@@ -528,7 +541,7 @@ a {
     width: 400px;
   }
 
-  #about, #expierence, #projects {
+  #about, #experience, #projects {
     width: 600px;
   }
   p, .job-task li p {
