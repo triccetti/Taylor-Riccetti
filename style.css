@@ -233,8 +233,7 @@ hr {
 }
  
 #projects > ol > li { 
-  padding-bottom: 15px; 
-  height: 500px;
+  padding-bottom: 15px;  
 }
 
 .project-pic span {
@@ -485,11 +484,11 @@ a {
   }
 
   .section-spacing {
-    padding: 120px;
+    height: 120px;
   }
 
   .small-spacing {
-    padding: 90px;
+    height: 90px;
   }
 
   #job-list li, 
@@ -532,7 +531,7 @@ a {
   }
 
   #about, #experience, #projects, #contact {
-    max-width: 400px;
+    max-width: 390px;
   }  
 
   #stranded-pic,
@@ -570,11 +569,11 @@ a {
   }
   
   .section-spacing {
-    padding: 120px;
+    height: 120px;
   }
 
   .small-spacing {
-    padding: 90px;
+    height: 90px;
   }
 
   #about, #experience, #projects, #contact {
