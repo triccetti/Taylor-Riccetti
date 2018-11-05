@@ -405,7 +405,7 @@ footer a {
 }
 
 .button { 
-  color: #dff6f5;
+  color: #3c5956;
   background-color: transparent;
   border: 2px solid #3978a8;
   border-radius: 2px; 
@@ -418,6 +418,10 @@ footer a {
   cursor: pointer;
   text-decoration: none;
 } 
+
+.resume-button {
+  color: #dff6f5;
+}
  
 .project-title {
   color: #3c5956;
