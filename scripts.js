@@ -39,10 +39,11 @@ function jobSelect(val) {
 }
  
 function scrollTo(element) {
-  console.log(element.offsetTop);
+  var offset = element.offsetTop - 200;
+  console.log(offset);
   window.scroll({
     behavior: 'smooth',
     left: 0,
-    top: element.offsetTop
+    top: offset
   });
 }
