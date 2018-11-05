@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   color: #397b44;
   background-color: rgba(223, 246, 245, 0.3);
   font-family: "Ubuntu", sans-serif; 
@@ -427,7 +427,8 @@ a {
 
 #about,
 #experience,
-#projects {
+#projects,
+#contact {
   width: 700px;
 }
  
@@ -479,7 +480,7 @@ a {
   }
 
   .title {
-    font-size: 18px;
+    font-size: 18px; 
 
   }
 
@@ -487,8 +488,8 @@ a {
     font-size: 14px;
   }
 
-  #about, #experience, #projects {
-    width: 400px;
+  #about, #experience, #projects, #contact {
+    max-width: 400px;
   }  
 
   #stranded-pic,
@@ -498,6 +499,10 @@ a {
   #pentago-pic {
     width: 100px;
     height: 100px; 
+  }
+
+  #contents {
+    padding-right: 25px;
   }
 }
 
@@ -516,7 +521,7 @@ a {
     margin: 50px;
   } 
 
-  #about, #experience, #projects{
+  #about, #experience, #projects, #contact {
     width: 500px;
   }
 
@@ -541,7 +546,7 @@ a {
     width: 400px;
   }
 
-  #about, #experience, #projects {
+  #about, #experience, #projects, #contact {
     width: 600px;
   }
   p, .job-task li p {
