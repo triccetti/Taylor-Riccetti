@@ -39,6 +39,7 @@ function jobSelect(val) {
 }
  
 function scrollTo(element) {
+  console.log(element.offsetTop);
   window.scroll({
     behavior: 'smooth',
     left: 0,
