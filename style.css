@@ -485,11 +485,13 @@ a {
     display: block;
   }
 
-
   .section-spacing {
-    margin: 40px;
+    margin: 90px;
   }
 
+  .small-spacing {
+    margin: 60px;
+  }
 
   #job-list li, 
   #jobs {
@@ -567,10 +569,14 @@ a {
   #footer-links {
     display: block;
   }
-
+  
   .section-spacing {
-    margin: 50px;
-  } 
+    margin: 100px;
+  }
+
+  .small-spacing {
+    margin: 70px;
+  }
 
   #about, #experience, #projects, #contact {
     width: 500px;
