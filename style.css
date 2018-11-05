@@ -225,17 +225,15 @@ hr {
   text-align: left;
   margin-left: 25px;
 }
-
-.project-pic {
-  float: left;
-}
-
+ 
 .tech-list {
   display: inline-block;
+  position: absolute;
+  margin: 25px;
 }
  
-#project-list li {
-  display: block;
+#projects > ol > li { 
+  padding-bottom: 15px;
 }
 
 .project-pic span {
