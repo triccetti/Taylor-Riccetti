@@ -94,6 +94,7 @@ hr {
 .subtitle {
   font-size: 12px;
   width: 80%;
+  margin: 0px auto 15px auto;
 }
 
 .courses, .p-languages {
