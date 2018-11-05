@@ -4,7 +4,7 @@ body {
   padding: 0; 
   color: #397b44;
   background-color: rgba(223, 246, 245, 0.3);
-  font-family: "Ubuntu", sans-serif; 
+  font-family: "Ubuntu", sans-serif;  
 }
 
 .shadow,
@@ -38,6 +38,10 @@ body {
 
 .gray {
   color: #a0938e;
+}
+
+.blue {
+  color:#3978a8;
 }
 
 .dark-brown {
@@ -98,10 +102,23 @@ hr {
   width: 41%;
 }
 
+.project-tech, 
+.project-tech li {
+  list-style-type: none; 
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px 10px;
+  display: inline-block;
+}
+
+.project-tech-label {
+  font-size:  16px;
+}
+
 #circle-pic {
   width: 200px;
   height: 200px;
-  background-image: url("https://raw.githubusercontent.com/triccetti/Portfolio/master/20181027_140043.jpg");
+  background-image: url("assets/20181027_140043.jpg");
   background-size: cover;
   display: inline-block;
   border-radius: 100px;
@@ -110,19 +127,19 @@ hr {
 }
 
 #stranded-pic {
-  background-image: url("strandedonplanetpixel.png");
+  background-image: url("assets/strandedonplanetpixel.png");
 }
 #husky-pic{  
-  background-image: url("huskyreview.png");
+  background-image: url("assets/huskyreview.png");
 }
 #mapmaker-pic{  
-  background-image: url("mapmaker.png");
+  background-image: url("assets/mapmaker.png");
 }
 #bot-pic{  
-  background-image: url("botdetector.png");
+  background-image: url("assets/botdetector.png");
 }
 #pentago-pic{  
-  background-image: url("pentago.png");
+  background-image: url("assets/pentago.png");
 }
 
 #stranded-pic,
@@ -198,13 +215,32 @@ hr {
   color: #dff6f5;
 }
  
-#experience {   
+#experience, #contact {   
   text-align: left;
   margin: 0 auto; 
 }
 
-#jobs { 
+.project-info {  
+  display: inline-block;
+  text-align: left;
+  margin-left: 25px;
+}
 
+.project-pic {
+  float: left;
+}
+
+.tech-list {
+  display: inline-block;
+}
+ 
+#project-list li {
+  display: block;
+}
+
+.project-pic span {
+  height: 100px;
+  width: 100px;
 }
 
 #job-list {
@@ -302,8 +338,7 @@ hr {
 
 #contents { 
   width: 100%;  
-  margin-top: 80px; 
-  display: inline-block;
+  margin-top: 80px;  
 }
 
 #about-blurb {
@@ -320,7 +355,7 @@ a:hover {
 
 #left-margin {
   position: fixed;
-  bottom: 25%;
+  bottom: 28%;
   margin-bottom: 35px;
   padding: 10px;
   z-index: 2;
@@ -365,6 +400,8 @@ footer a {
 
 .small-spacing {
   margin: 50px;
+  display: block;  
+  width: 100%;
 }
 
 button { 
@@ -445,7 +482,7 @@ a {
 
 
   .section-spacing {
-    margin: 35px;
+    margin: 40px;
   }
 
 
@@ -504,6 +541,15 @@ a {
   #contents {
     padding-right: 25px;
   }
+
+  
+  .project-tech li, .project-tech-label {
+    display: block;
+  } 
+  
+  p, .job-task li p {
+    font-size: 15px;
+  }
 }
 
 
@@ -527,8 +573,7 @@ a {
 
   #jobs {
     display: inline-block;
-  }
-
+  } 
 
   #stranded-pic,
   #husky-pic, 
@@ -537,6 +582,14 @@ a {
   #pentago-pic {
     width: 150px;
     height: 150px; 
+  }
+
+  .project-tech li, .project-tech-label {
+    display: block;
+  }
+
+  p, .job-task li p {
+    font-size: 16px;
   }
 }
 
@@ -548,9 +601,14 @@ a {
 
   #about, #experience, #projects, #contact {
     width: 600px;
-  }
+  } 
+
   p, .job-task li p {
     font-size: 18px;
+  }   
+  
+  .project-pic > .icon-link {
+    font-size: 50px;
   }
 }
 
@@ -562,12 +620,24 @@ a {
 
   p, .job-task li p  {
     font-size: 20px;
+  } 
+  
+  .project-pic > .icon-link {
+    font-size: 50px;
   }
 }
 
 /* x-large screen */
 @media (min-width: 1200px) { 
   #job-container {
+    width: 500px;
+  }
+
+  .project-pic > .icon-link {
+    font-size: 50px;
+  }
+
+  .project-info { 
     width: 500px;
   }
 
