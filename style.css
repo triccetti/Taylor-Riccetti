@@ -91,6 +91,11 @@ hr {
   ); 
 } 
 
+.subtitle {
+  font-size: 12px;
+  width: 80%;
+}
+
 .courses, .p-languages {
   list-style-type: none; 
   display: inline-block;
