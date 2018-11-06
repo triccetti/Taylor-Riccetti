@@ -80,6 +80,10 @@ body {
   text-align: left;
 }
 
+#about p {
+  margin: 10px;
+}
+
 hr {
   border: 0;
   height: 1px;
