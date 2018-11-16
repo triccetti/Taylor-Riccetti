@@ -493,11 +493,13 @@ a {
   }
 
   .section-spacing {
-    height: 120px;
+    height: 150px;
+    width: 100px;
   }
 
   .small-spacing {
-    height: 90px;
+    height: 100px;
+    width: 100px;
   }
 
   #job-list li, 
