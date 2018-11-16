@@ -493,11 +493,13 @@ a {
   }
 
   .section-spacing {
-    padding: 150px; 
+    margin: 135px;
   }
 
   .small-spacing {
-    padding: 100px; 
+    margin: 50px;
+    display: block;  
+    width: 100%;
   }
 
   #job-list li, 
@@ -578,11 +580,13 @@ a {
   }
   
   .section-spacing {
-    padding: 150px; 
+    margin: 135px;
   }
 
   .small-spacing {
-    padding: 100px; 
+    margin: 50px;
+    display: block;  
+    width: 100%;
   }
 
   #about, #experience, #projects, #contact {
