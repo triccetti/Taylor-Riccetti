@@ -493,11 +493,11 @@ a {
   }
 
   .section-spacing {
-    margin: 135px;
+    margin: 75px;
   }
 
   .small-spacing {
-    margin: 50px;
+    margin: 20px;
     display: block;  
     width: 100%;
   }
@@ -580,14 +580,15 @@ a {
   }
   
   .section-spacing {
-    margin: 135px;
+    margin: 85px;
   }
 
   .small-spacing {
-    margin: 50px;
+    margin: 30px;
     display: block;  
     width: 100%;
   }
+
 
   #about, #experience, #projects, #contact {
     width: 500px;
