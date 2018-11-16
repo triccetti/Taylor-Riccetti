@@ -403,12 +403,13 @@ footer a {
 
 .section-spacing {
   margin: 135px;
+  width: auto;
 }
 
 .small-spacing {
   margin: 50px;
   display: block;  
-  width: 100%;
+  width: auto;
 }
 
 .button { 
@@ -494,12 +495,13 @@ a {
 
   .section-spacing {
     margin: 75px;
+    width: auto;
   }
 
   .small-spacing {
     margin: 20px;
-    display: block;  
-    width: 100%;
+    display: block;   
+    width: auto;
   }
 
   #job-list li, 
@@ -581,12 +583,13 @@ a {
   
   .section-spacing {
     margin: 85px;
+    width: auto;
   }
 
   .small-spacing {
     margin: 30px;
     display: block;  
-    width: 100%;
+    width: auto;
   }
 
 
