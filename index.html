@@ -67,11 +67,30 @@
 								<a class="nav-link slow-transition" data-toggle="collapse" data-target="#navbarCustom" href="#contact">Contact</a>
 							</li>
 						</ul>   
-						<a class="ml-auto slow-transition button resume-button" href="https://drive.google.com/file/d/1W_HwxAaPlO9HcbzQLeIEVmg4eksOE5qY/view?usp=sharing">Resume</a>
+						<button class="ml-auto slow-transition button resume-button" onclick="showPasswordDialog()">Resume</button>
 					</div>
 				</nav>
 			</div>
-			
+ 
+			<!-- Password Overlay -->
+			<div id="passwordContainer" class="container-fluid">
+				<div id="passwordFormContainer" class="animate">
+					<form id="passwordForm"> 	
+						<h3 class="blue">Enter Password</h3>
+						<p class="smaller blue">Please enter a password to view my resume. If you don't have a password please email me at <a class="slow-transition bold purple ml-auto " href="mailto:taylorriccetti@gmail.com">taylorriccetti@gmail.com</a></p>
+
+					    <div>
+					    	<input id="passwordInput" type="password" class="form-control" placeholder="Enter Password" nwame="ps" required>
+							<button class="slow-transition bold purple ml-auto button" onclick="validatePassword()" type="submit">Submit</button>
+						</div> 		 
+					    	</br>
+					      	<button id="passwordCloseDialog" type="button" onclick="hidePasswordDialog()" class="slow-transition bold purple ml-auto button">Close</button> 
+					    
+					</form>
+				</div>
+				
+			</div>
+
 			<!-- Container -->
 			<div class="container-fluid" id="contents">
 				<!-- Home --> 
