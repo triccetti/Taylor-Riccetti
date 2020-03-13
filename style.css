@@ -136,6 +136,9 @@ hr {
   -moz-border-radius: 100px;
 }
 
+#giftrunner-pic {
+  background-image: url("assets/giftrunner.png");
+}
 #stranded-pic {
   background-image: url("assets/strandedonplanetpixel.png");
 }
@@ -156,7 +159,8 @@ hr {
 #husky-pic, 
 #mapmaker-pic,
 #bot-pic, 
-#pentago-pic {
+#pentago-pic,
+#giftrunner-pic {
   width: 200px;
   height: 200px;
   background-size: cover;
@@ -174,7 +178,8 @@ hr {
 #husky-pic:hover,
 #mapmaker-pic:hover,
 #bot-pic:hover, 
-#pentago-pic:hover{
+#pentago-pic:hover,
+#giftrunner-pic:hover {
   -webkit-filter: grayscale(0);
   filter: none;
 }
